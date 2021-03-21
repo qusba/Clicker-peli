@@ -1,0 +1,105 @@
+
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 15:03:10 2021 +0200
+
+    poistettiin file1 ja uudelleennimettiin file2 -> file22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit dad4f8f0832986236c6417ba2d78ff48dc9a2b12
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:46:55 2021 +0200
+
+    luotiin kansio tiedostoja ja tiedostot file1,2 ja 3
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7bda3a91b051e42762aacdb08f3353c7f65928f6
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:37:43 2021 +0200
+
+    "poistettiin ja lisättiin"
+
+ eka.txt    | 5 +----
+ kolmas.txt | 3 ++-
+ 2 files changed, 3 insertions(+), 5 deletions(-)
+
+commit dd0a254111f68d7127bd8360a312d75feced1b6d
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:35:27 2021 +0200
+
+    poistettiin toinen.txt ja uudelleen timettiin tiedosto.txt -> eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 43ea8b6c5c238488716cd6afc48cac703e6603e6
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:34:36 2021 +0200
+
+    poistettiin toinen.txt ja uudelleen timettiin tiedosto.txt -> eka.txt
+
+ tiedosto.txt | 24 ++++++++++++++++++++----
+ toinen.txt   |  1 -
+ 2 files changed, 20 insertions(+), 5 deletions(-)
+
+commit 87e4e23e4aaef4b88086d294bf063a6c6d73d069
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:29:00 2021 +0200
+
+    kopioitiin tekstiä
+
+ tiedosto.txt | 36 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+
+commit f7f595ba7f0ec2fef385115ff137a16b0836c180
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:16:33 2021 +0200
+
+    luotiin kansio stuff ja sinne tiedosto4
+
+ "stuff/nelj\303\244s.txt" | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 1cff12460de48517435a7afab64ddbf87dcff620
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:15:10 2021 +0200
+
+    toiseen ja kolmanteen lisättiin tekstiä
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 8b20fb4d8fad00b0b71fc063b755af9cc11d1cfe
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:13:16 2021 +0200
+
+    kolmas luotiin
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ab020d63d3b57128500489a61f501caee27dc7f8
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:08:44 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 195dbe4489337dd66a14df17ffc131abd2e0ef23
+Author: qusba <kasper.kahkonen@outlook.com>
+Date:   Sat Mar 20 14:04:25 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
