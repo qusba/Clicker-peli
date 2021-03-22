@@ -1,5 +1,9 @@
-#TÄMÄ ON README TIEDOSTO
+# TÄMÄ ON README TIEDOSTO
 
+## Tehtävät
 
-_kokeilu tekstiä **lihavoituna**_
+### Viikko1
 
+[gitlog.txt][/home/ot-harjoitustyo/laskarit/viikko1/gitlog.txt]
+
+[komentorivi.txt][/home/ot-harjoitustyo/laskarit/viikko1/kometorivi.txt]
