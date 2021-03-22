@@ -4,6 +4,6 @@
 
 ### Viikko1
 
-[gitlog.txt][/home/ot-harjoitustyo/laskarit/viikko1/gitlog.txt]
+[gitlog.txt][https://github.com/qusba/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt]
 
-[komentorivi.txt][/home/ot-harjoitustyo/laskarit/viikko1/kometorivi.txt]
+[komentorivi.txt][https://github.com/qusba/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt]
