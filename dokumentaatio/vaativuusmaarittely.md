@@ -1,7 +1,7 @@
 # Vaativuusmäärittely
 
 ## Sovelluksen tarkoitus
-Sovellus on perinteinen clicker-peli, jossa käyttäjän on tarkoitus kerätä mahdollisimman paljon pisteitä. Pelissä on yksi käyttäjä, mutta 
+Sovellus on perinteinen clicker-peli, jossa käyttäjän on tarkoitus kerätä mahdollisimman paljon pisteitä. Pelissä on yksi käyttäjä, jonka 
 tilanne tulee olla mahdollista tallentaa peliä lopettaessa.
 
 ## Käyttöliittymäluonnos
