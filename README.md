@@ -11,6 +11,7 @@
 ### Viikko2
 #### Dokumentaatio
 [tuntikirjanpito.md](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
 [vaativuusmaarittely.md](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmaarittely.md)
 
 
