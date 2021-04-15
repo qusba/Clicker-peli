@@ -1,4 +1,3 @@
-from sys import exit
 import pygame
 class GameLoop():
     def __init__(self,gamelogic,display):
@@ -11,7 +10,8 @@ class GameLoop():
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    exit()
+                    exit() #pylint: disable = R1722
+                    #Pylint ehdotti sys.exitin käyttöä ja sys.exittiä käytettäessä herjasi exitin uudelleenmäärittelystä.
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if event.button == 1:
                         self.gamelogic.click()
