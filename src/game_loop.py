@@ -15,29 +15,34 @@ class GameLoop():
         self.begin = True
 
     def start(self):
-        if self.begin:
-            self.startview.view()
-            while True:
-                for event in self.event_queue.get_events():
-                    if event.type == pygame.QUIT:
-                        sys.exit()
-                    if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                        if self.startview.start_new_game_rect.collidepoint(event.pos):
-                            self.begin = False
-                            self.start()
-
         while True:
-            for event in self.event_queue.get_events():
-                if event.type == pygame.QUIT:
-                    
-                    sys.exit()
-                if event.type == pygame.MOUSEBUTTONDOWN:
-                    if event.button == 1:
-                        self.gamelogic.click()
+            if self.event_handler() == False:
+                break
+
             self.text = self.font.render(
                 "Score: "+str(self.gamelogic.score), True, self.colors.red)
             self.display.fill((self.colors.black))
             self.display.blit(self.text, (10, 10))
             pygame.display.update()
             self.clock.tick(60)
-        
+        pygame.display.quit()
+        pygame.quit()
+
+    def event_handler(self):
+
+        while self.begin:
+            self.startview.view()
+            for event in self.event_queue.get_events():
+                if event.type == pygame.QUIT:
+                    self.begin = False
+                    return False
+                if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                    if self.startview.start_new_game_rect.collidepoint(event.pos):
+                        self.begin = False
+
+        for event in self.event_queue.get_events():
+            if event.type == pygame.QUIT:
+                return False
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if event.button == 1:
+                    self.gamelogic.click()
