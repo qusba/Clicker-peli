@@ -9,11 +9,11 @@ Peli koostuu kolmesta näkymästä. Aloitusnäkymästä on mahdollista jatkaa va
 jossa on mahdollista avata kauppa, mistä pelaaja voi ostaa päivityksiä.
 
 ## Perusversion tarjoama toiminnallisuus
-- Käyttäjä voi aloittaa uuden pelin tai jatkaa vanhaa peliä.
-- Käyttäjä voi pelinäkymässä tiettyä aluetta klikkaamalla tuottaa itselleen pisteitä.
+- Käyttäjä voi aloittaa uuden pelin tai jatkaa vanhaa peliä. (uusi peli tehty)
+- Käyttäjä voi pelinäkymässä tiettyä aluetta klikkaamalla tuottaa itselleen pisteitä. (osittain tehty, aluetta ei vielä määritelty)
 - Käyttäjä voi pelinäkymässä avata kaupan, mistä voi ostaa päivityksiä, jotka joko tuottavat automaattisesti pisteitä,
-  tai muokkaavat klikkaamisen tuottamaa pistemäärää.
-- Käyttäjä voi lopettaessaan tallentaa pelin.
+  tai muokkaavat klikkaamisen tuottamaa pistemäärää. (ei tehty)
+- Käyttäjä voi lopettaessaan tallentaa pelin. (ei tehty)
 
 ## Jatkokehitysideoita
 
