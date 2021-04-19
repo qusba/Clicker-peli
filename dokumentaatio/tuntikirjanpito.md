@@ -5,4 +5,4 @@
 28.3 | 1 | Alustava määrittelydokumentti
 13.4 | 5,5 | Projekti aloitettiin, klikkaaminen tuottaa pisteitä. Suurin osa ajasta meni pygamen opetteluun ja aikaisemman viikon asioiden kertaamiseen.
 14.4 | 3 | Aloitettiin aloitusnäkymän tekeminen
-19.4 | 5 | Aloitusnäytön start game -toiminnallisuus saatiin valmiiksi. Yritettiin luoda gameloopille testejä tuloksetta
+19.4 | 5 | Aloitusnäytön start game -toiminnallisuus saatiin valmiiksi. Luotiin gameloopille testejä.
