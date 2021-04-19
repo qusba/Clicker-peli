@@ -3,10 +3,11 @@ import pygame
 
 
 class GameLoop():
-    def __init__(self, gamelogic, display, colors, startview):
+    def __init__(self, gamelogic, display, colors, startview, event_queue):
         self.display = display
         self.gamelogic = gamelogic
         self.colors = colors
+        self.event_queue = event_queue
         self.startview = startview
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont("Arial", 24)
@@ -17,7 +18,7 @@ class GameLoop():
         if self.begin:
             self.startview.view()
             while True:
-                for event in pygame.event.get():
+                for event in self.event_queue.get_events():
                     if event.type == pygame.QUIT:
                         sys.exit()
                     if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
@@ -26,8 +27,9 @@ class GameLoop():
                             self.start()
 
         while True:
-            for event in pygame.event.get():
+            for event in self.event_queue.get_events():
                 if event.type == pygame.QUIT:
+                    
                     sys.exit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if event.button == 1:
@@ -38,3 +40,4 @@ class GameLoop():
             self.display.blit(self.text, (10, 10))
             pygame.display.update()
             self.clock.tick(60)
+        
