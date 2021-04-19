@@ -1,4 +1,4 @@
-# ot-hajoitustyö
+# ot-harjoitustyö
 Ohjelman perusidea on clicker-tyypin peli, jossa pisteitä kerätään hiiren painalluksilla. Pisteillä voi ostaa kaupasta päivityksiä,
 jotka nopeuttavat pisteiden keräämistä.
 
