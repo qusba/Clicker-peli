@@ -8,7 +8,7 @@ jotka nopeuttavat pisteiden keräämistä.
 
 [vaativuusmaarittely.md](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmaarittely.md)
 
-[arkkitehtuuri.md] (https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+[arkkitehtuuri.md](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ## Komentorivitoiminnot
 
