@@ -4,11 +4,11 @@ jotka nopeuttavat pisteiden keräämistä.
 
 
 ## Dokumentaatio
-[tuntikirjanpito.md](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[tuntikirjanpito](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-[vaativuusmaarittely.md](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmaarittely.md)
+[vaativuusmaarittely](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmaarittely.md)
 
-[arkkitehtuuri.md](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+[arkkitehtuuri](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ## Komentorivitoiminnot
 
