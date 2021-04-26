@@ -5,14 +5,14 @@ Sovellus on perinteinen clicker-peli, jossa käyttäjän on tarkoitus kerätä m
 tilanne tulee olla mahdollista tallentaa peliä lopettaessa.
 
 ## Käyttöliittymäluonnos
-Peli koostuu kolmesta näkymästä. Aloitusnäkymästä on mahdollista jatkaa vanhaa peliä tai aloittaa uusi peli. Valinnan jälkeen avautuu itse pelinäkymä,
-jossa on mahdollista avata kauppa, mistä pelaaja voi ostaa päivityksiä.
+Peli koostuu neljästä näkymästä. Aloitusnäkymästä on mahdollista jatkaa vanhaa peliä tai aloittaa uusi peli. Valinnan jälkeen avautuu itse pelinäkymä,
+jossa on mahdollista avata menu, mistä pelaaja voi joko tallentaa ja lopettaa pelin tai avata kaupan, mistä pelaaja voi ostaa päivityksiä.
 
 ## Perusversion tarjoama toiminnallisuus
 - Käyttäjä voi aloittaa uuden pelin tai jatkaa vanhaa peliä. (uusi peli tehty)
 - Käyttäjä voi pelinäkymässä tiettyä aluetta klikkaamalla tuottaa itselleen pisteitä. (osittain tehty, aluetta ei vielä määritelty)
 - Käyttäjä voi pelinäkymässä avata kaupan, mistä voi ostaa päivityksiä, jotka joko tuottavat automaattisesti pisteitä,
-  tai muokkaavat klikkaamisen tuottamaa pistemäärää. (ei tehty)
+  tai muokkaavat klikkaamisen tuottamaa pistemäärää.  (tehty)
 - Käyttäjä voi lopettaessaan tallentaa pelin. (ei tehty)
 
 ## Jatkokehitysideoita
