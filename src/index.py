@@ -3,6 +3,8 @@ from game_logic import GameLogic
 from game_loop import GameLoop
 from ui.colors import Colors
 from ui.start_view import StartView
+from ui.menu import Menu
+from ui.shop import Shop
 from event_queue import EventQueue
 
 
@@ -13,8 +15,11 @@ def main():
     colors = Colors()
     event_queue = EventQueue()
     startview = StartView(display, colors)
+    menu = Menu(display, colors)
     logic = GameLogic()
-    game_loop = GameLoop(logic, display, colors, startview, event_queue)
+    shop = Shop(display, colors, logic)
+    game_loop = GameLoop(logic, display, colors,
+                         startview, event_queue, menu, shop)
     pygame.init()
     game_loop.start()
 
