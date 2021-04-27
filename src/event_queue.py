@@ -1,8 +1,6 @@
 import pygame
 
-class EventQueue():
-    def __init__(self):
-        pass
 
+class EventQueue():
     def get_events(self):
         return pygame.event.get()

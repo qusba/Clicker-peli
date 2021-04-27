@@ -1,4 +1,3 @@
-import sys
 import pygame
 
 
@@ -21,8 +20,6 @@ class GameLoop():
 
     def start(self):
         while True:
-            if self.event_handler() == False:
-                break
 
             text_score = self.font.render(
                 "Score: "+str(self.gamelogic.score), True, self.colors.white)
@@ -33,13 +30,16 @@ class GameLoop():
             self.display.blit(text_score, (10, 10))
             self.display.blit(text_menu, (930, 28))
             pygame.display.update()
-            
+
+            if self.event_handler() is False:
+                break
+
         pygame.display.quit()
         pygame.quit()
 
     def event_handler(self):
-        dt = self.clock.tick()
-        self.time_elapsed += dt
+        tick = self.clock.tick()
+        self.time_elapsed += tick
         if self.time_elapsed > 1000:
             self.gamelogic.autoclicker_click()
             self.time_elapsed = 0
@@ -89,7 +89,6 @@ class GameLoop():
                                     self.gamelogic.autoclicker()
                                 elif self.shop.autoclicker_upgrade_rect.collidepoint(event.pos):
                                     self.gamelogic.autoclicker_upgrade()
-                            
 
                 else:
                     self.gamelogic.click()
