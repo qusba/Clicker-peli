@@ -1,5 +1,8 @@
+# Arkkitehtuurikuvaus
 
-![luokkakaavio](https://user-images.githubusercontent.com/81024277/115441616-ba651180-a219-11eb-93a6-34efbf23daea.png)
+## Luokka/pakkauskaavio
+![luokka_pakkauskaavio](https://user-images.githubusercontent.com/81024277/116245463-a79a9180-a771-11eb-859d-23e7feae6cf1.jpg)
+
 
 ## Päätoiminnallisuudet 
 
