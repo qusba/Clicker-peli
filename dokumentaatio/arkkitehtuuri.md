@@ -3,6 +3,8 @@
 ## Luokka/pakkauskaavio
 ![luokka_pakkauskaavio](https://user-images.githubusercontent.com/81024277/116245463-a79a9180-a771-11eb-859d-23e7feae6cf1.jpg)
 
+Peliä ylläpitää GameLoop-luokka, joka on rippuvainen kaikista muista luokista. Kaikki ui-luokat ovat riippuvasia Colors-luokasta. GameLogic-luokka on eriytetty, eikä se ole riippuvainen mistään muusta luokasta.
+
 
 ## Päätoiminnallisuudet 
 
