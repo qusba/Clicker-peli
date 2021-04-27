@@ -10,6 +10,10 @@ jotka nopeuttavat pisteiden keräämistä.
 
 [arkkitehtuuri](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+## Asennus
+1. Mene terminaalissa repositorion päähakemistoon ja asenna riippuvuudet komennolla poetry install
+2. Ohjelman voi suorittaa komennolla poetry run invoke start
+
 ## Komentorivitoiminnot
 
 ### Ohjelman suorittamiseen: 
