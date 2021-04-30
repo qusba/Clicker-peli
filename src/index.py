@@ -6,6 +6,7 @@ from ui.start_view import StartView
 from ui.menu import Menu
 from ui.shop import Shop
 from event_queue import EventQueue
+from repositories.save_game import SaveGame
 
 
 def main():
@@ -18,8 +19,9 @@ def main():
     menu = Menu(display, colors)
     logic = GameLogic()
     shop = Shop(display, colors, logic)
+    save = SaveGame(logic)
     game_loop = GameLoop(logic, display, colors,
-                         startview, event_queue, menu, shop)
+                         startview, event_queue, menu, shop, save)
     pygame.init()
     game_loop.start()
 

@@ -49,7 +49,8 @@ class Shop():
 
         text_autoclicker_description1 = self.font2.render(
             f"Clicks {self.gamelogic.autoclicker_power} times", True, self.colors.white)
-        text_autoclicker_description2 = self.font2.render("per second!", True, self.colors.white)
+        text_autoclicker_description2 = self.font2.render(
+            "per second!", True, self.colors.white)
 
         text_autoclicker_upgrade_description1 = self.font2.render(
             "Doubles your", True, self.colors.white)
@@ -64,7 +65,7 @@ class Shop():
             f"Cost: {self.gamelogic.autoclicker_upgrade_cost}", True, self.colors.white)
         text_score = self.font2.render(
             "Score: "+str(self.gamelogic.score), True, self.colors.white)
-       
+
         self.display.blit(text_score, (52, 52))
         self.display.blit(text_click_upgrade_cost, (100, 200))
         self.display.blit(text_autoclicker_cost, (370, 200))

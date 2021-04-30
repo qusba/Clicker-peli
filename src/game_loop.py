@@ -2,12 +2,13 @@ import pygame
 
 
 class GameLoop():
-    def __init__(self, gamelogic, display, colors, startview, event_queue, menu, shop):
+    def __init__(self, gamelogic, display, colors, startview, event_queue, menu, shop, save):
         self.display = display
         self.gamelogic = gamelogic
         self.colors = colors
         self.event_queue = event_queue
         self.startview = startview
+        self.gamesaver = save
         self.menu = menu
         self.shop = shop
         self.clock = pygame.time.Clock()
@@ -15,6 +16,8 @@ class GameLoop():
         self.font = pygame.font.SysFont("Arial", 24)
         self.text = ""
         self.begin = True
+        self.click_rect = None
+        self.menu_rect = None
         self.menu_is_open = False
         self.shop_is_open = False
 
@@ -27,6 +30,8 @@ class GameLoop():
             self.display.fill((self.colors.black))
             self.menu_rect = pygame.draw.rect(
                 self.display, self.colors.red, (900, 10, 120, 70))
+            self.click_rect = pygame.draw.circle(
+                self.display, self.colors.red, (512, 320), 150)
             self.display.blit(text_score, (10, 10))
             self.display.blit(text_menu, (930, 28))
             pygame.display.update()
@@ -52,6 +57,9 @@ class GameLoop():
                 if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                     if self.startview.start_new_game_rect.collidepoint(event.pos):
                         self.begin = False
+                    elif self.startview.load_game_rect.collidepoint(event.pos):
+                        self.gamesaver.loadgame()
+                        self.begin = False
 
         for event in self.event_queue.get_events():
             if event.type == pygame.QUIT:
@@ -73,7 +81,8 @@ class GameLoop():
                                     self.menu_is_open = False
                                     self.shop_is_open = True
                                 elif self.menu.save_and_exit_rect.collidepoint(event.pos):
-                                    pass
+                                    self.gamesaver.savegame()
+                                    return False
                     while self.shop_is_open:
                         self.shop.open_shop()
                         for event in self.event_queue.get_events():
@@ -90,5 +99,5 @@ class GameLoop():
                                 elif self.shop.autoclicker_upgrade_rect.collidepoint(event.pos):
                                     self.gamelogic.autoclicker_upgrade()
 
-                else:
+                elif self.click_rect.collidepoint(event.pos):
                     self.gamelogic.click()
