@@ -29,7 +29,7 @@ class GameLoop():
         self.colors = colors
         self.event_queue = event_queue
         self.startview = startview
-        self.gamesaver = save
+        self.gamesaver =save
         self.menu = menu
         self.shop = shop
         self.clock = pygame.time.Clock()
@@ -101,11 +101,11 @@ class GameLoop():
 
                     while self.menu_is_open:
                         self.menu.open_menu()
-                        for event2 in self.event_queue.get_events():
-                            if event2.type == pygame.QUIT:
+                        for event in self.event_queue.get_events():
+                            if event.type == pygame.QUIT:
                                 self.menu_is_open = False
                                 return False
-                            if event2.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                                 if self.menu.exit_menu_rect.collidepoint(event.pos):
                                     self.menu_is_open = False
                                 elif self.menu.shop_rect.collidepoint(event.pos):
@@ -116,11 +116,11 @@ class GameLoop():
                                     return False
                     while self.shop_is_open:
                         self.shop.open_shop()
-                        for event3 in self.event_queue.get_events():
-                            if event3.type == pygame.QUIT:
+                        for event in self.event_queue.get_events():
+                            if event.type == pygame.QUIT:
                                 self.shop_is_open = False
                                 return False
-                            if event3.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                                 if self.shop.exit_shop_rect.collidepoint(event.pos):
                                     self.shop_is_open = False
                                 elif self.shop.click_upgrade_rect.collidepoint(event.pos):
