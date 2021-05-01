@@ -3,7 +3,18 @@ from ui.colors import Colors
 
 
 class Menu():
+    """Class responsible of the menu screen.
+
+    """
     def __init__(self, display, colors):
+
+        """The constructor of the class.
+
+        Args:
+            display: The pygame display being used
+            colors: The class responsible for colors
+
+        """ 
         self.display = display
         self.colors = colors
         self.font = pygame.font.SysFont("Arial", 45)

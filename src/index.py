@@ -10,6 +10,9 @@ from repositories.save_game import SaveGame
 
 
 def main():
+    """Main function of the game. Creates all the classes that GameLoop-class needs to run
+    the game, and then starts the game by calling gameloop.start().
+    """
     display = pygame.display.set_mode((1024, 640))
     pygame.display.set_caption("Clicker")
     pygame.font.init()

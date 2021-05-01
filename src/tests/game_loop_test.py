@@ -1,4 +1,4 @@
-import sys
+
 import unittest
 import pygame
 from game_loop import GameLoop
@@ -8,6 +8,7 @@ from ui.menu import Menu
 from ui.shop import Shop
 from event_queue import EventQueue
 from game_logic import GameLogic
+from repositories.save_game import SaveGame
 
 
 class StubEvent():
@@ -32,29 +33,33 @@ class TestGameLoop(unittest.TestCase):
         self.gamelogic = GameLogic()
         self.colors = Colors()
         self.startview = StartView(self.display, self.colors)
+        self.save = SaveGame(self.gamelogic)
         self.menu = Menu(self.display,self.colors)
         self.shop = Shop(self.display,self.colors,self.gamelogic)
+        pygame.init()
 
     def test_can_close_at_start(self):
-        pygame.init()
+        
         events = [StubEvent(pygame.QUIT, 1, (1024, 0))]
         event_queue = StubEventQueue(events)
         gameloop = GameLoop(self.gamelogic, self.display,
-                            self.colors, self.startview, event_queue, self.menu, self.shop)
+                            self.colors, self.startview, event_queue, self.menu, self.shop,self.save)
         gameloop.start()
         self.assertEqual(gameloop.begin, False)
         self.assertEqual(gameloop.event_handler(), False)
 
     def test_can_close_after_starting(self):
-        pygame.init()
+        
         events = [StubEvent(pygame.MOUSEBUTTONDOWN, 1, (320, 110)), StubEvent(
             pygame.MOUSEBUTTONDOWN, 1, (320, 110)), StubEvent(pygame.QUIT, 1, (0, 0))]
         event_queue = StubEventQueue(events)
         gameloop = GameLoop(self.gamelogic, self.display,
-                            self.colors, self.startview, event_queue,self.menu,self.shop)
+                            self.colors, self.startview, event_queue,self.menu,self.shop,self.save)
         gameloop.start()
         self.assertEqual(gameloop.begin, False)
         self.assertEqual(gameloop.event_handler(), False)
+
+
     
     
         

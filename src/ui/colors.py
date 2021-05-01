@@ -1,6 +1,10 @@
 import pygame
 
 class Colors():
+    """A class for pygame colors.
+
+    Just makes life easier and more clear, because we can refer to the colors by their name.
+    """
     def __init__(self):
         self.white = (255,255,255)
         self.black = (0,0,0)

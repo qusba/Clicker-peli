@@ -4,7 +4,16 @@ from game_logic import GameLogic
 
 
 class Shop():
+    """A class responsible of the shop.
+    """
     def __init__(self, display, colors, gamelogic):
+        """The constructor of the class.
+
+        Args:
+            display: The pygame display in use. Created in the main function.
+            colors: The class of colors.
+            gamelogic: The class responsible of the games logical functions.
+        """
         self.display = display
         self.colors = colors
         self.gamelogic = gamelogic
@@ -12,6 +21,8 @@ class Shop():
         self.font2 = pygame.font.SysFont("Arial", 25)
 
     def open_shop(self):
+        """The function responsible of drawing the shop.
+        """
         pygame.draw.rect(self.display, self.colors.black, (0, 0, 1024, 640))
         pygame.draw.rect(self.display, self.colors.white, (48, 48, 930, 544))
         pygame.draw.rect(self.display, self.colors.red, (50, 50, 926, 540))

@@ -12,4 +12,4 @@ laskarit/viikko2/unicafe/.pytest_cache
 /laskarit/viikko2/unicafe/__pycache__
 /src/ui/__pycache__
 /src/repositories/__pycache__
-src/repositories/__pycache__/save_game.cpython-38.pyc
+/src/repositories/__pycache__/save_game.cpython-38.pyc
