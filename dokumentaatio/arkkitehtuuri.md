@@ -6,10 +6,10 @@
 Peliä ylläpitää GameLoop-luokka, joka on rippuvainen kaikista muista luokista. Kaikki ui-luokat ovat riippuvasia Colors-luokasta. GameLogic-luokka on eriytetty, eikä se ole riippuvainen mistään muusta luokasta.
 
 ## Käyttöliittymä
-Pelissä on neljä erillaista näkymää: aloitusnäkymä, pelinkäkymä, valikko- sekä kauppanäkymät. Pelinäkymää pyörittää GameLoop-luokan _start_-metodi, joka huolehtii pelin pyörittämisestä, kaikilla muilla näkymillä on oma luokkansa. Pelin kaikki toiminnot toteutuvat käyttäjän hiirenpainalluksilla.
+Pelissä on neljä erillaista näkymää: aloitusnäkymä, pelinkäkymä, valikko- sekä kauppanäkymät. Pelinäkymää pyörittää GameLoop-luokan _start()_-metodi, joka huolehtii pelin pyörittämisestä, kaikilla muilla näkymillä on oma luokkansa. Pelin kaikki toiminnot toteutuvat käyttäjän hiirenpainalluksilla.
 
 ## Sovelluslogiikka
-Pelin pisteytyksen sovelluslogiikasta vastaa täysin _GameLogic_-luokka. Metodia _click()_ kutsutaan aina kun käyttäjä painaa hiirellä näytöllä näkyvästä ympyrästä. Metodi tuottaa pisteitä. Metodia _click_upgrade()_ kutsutaan kun käyttäjä ostaa kaupasta päivityksen "2X". Metodi _autoclicker()_ tuottaa käyttäjälle automaattisia klikkauksia, sitä kutsutaan kun vastaavan niminen päivitys ostetaan kaupasta. Metodi _autoclicker_click()_ huolehtii siitä että autoclikkerit kutsuvat metodia _click()_ oikean verran; metodia kutsutaan pelin loopissa kerran sekunnissa. Luokan viimeinen metodi _autoclicker_upgrade()_ vaikuttaa autoclikkereiden klikkausnopeuteen per sekunti. Metodia kutsutaan aina kun käyttäjä ostaa saman nimisen päivityksen kaupasta.
+Pelin pisteytyksen sovelluslogiikasta vastaa täysin _GameLogic_-luokka. Metodia _click()_ kutsutaan aina kun käyttäjä painaa hiirellä näytöllä näkyvästä ympyrästä, tämä tuottaa pisteitä. Metodia _click_upgrade()_ kutsutaan kun käyttäjä ostaa kaupasta päivityksen "2X". Metodi _autoclicker()_ tuottaa käyttäjälle automaattisia klikkauksia, sitä kutsutaan kun vastaavan niminen päivitys ostetaan kaupasta. _autoclicker_click()_-metodi huolehtii siitä että autoclikkerit kutsuvat metodia _click()_ oikean verran; metodia kutsutaan pelin loopissa kerran sekunnissa. Luokan viimeinen metodi _autoclicker_upgrade()_ vaikuttaa autoclikkereiden klikkausnopeuteen per sekunti, sitä kutsutaan aina kun käyttäjä ostaa saman nimisen päivityksen kaupasta.
 
 
 ## Päätoiminnallisuudet 
