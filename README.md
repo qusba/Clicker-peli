@@ -1,4 +1,4 @@
-# ot-harjoitustyö
+# Clicker peli
 Ohjelman perusidea on clicker-tyypin peli, jossa pisteitä kerätään hiiren painalluksilla. Pisteillä voi ostaa kaupasta päivityksiä,
 jotka nopeuttavat pisteiden keräämistä.
 
@@ -9,6 +9,8 @@ jotka nopeuttavat pisteiden keräämistä.
 [vaativuusmaarittely](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmaarittely.md)
 
 [arkkitehtuuri](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+[Testausdokumentaatio](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 ## Asennus
 1. Mene terminaalissa repositorion päähakemistoon ja asenna riippuvuudet komennolla poetry install
