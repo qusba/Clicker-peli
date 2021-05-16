@@ -21,3 +21,6 @@ Kattavuutta laskee _GameLoop_-luokan testaus. Kohtasin ylitsepääsemättömän 
 
 ### Asennus
 Asennusta on testattu manuaalisesti käyttöohjeen ohjeistamalla tavalla.
+
+### Toiminnallisuudet
+Vaativuusmäärittelyn kaikki toiminnallisuudet on testattu manuaalisesti, sekä osittain automaatiotesteillä. 
