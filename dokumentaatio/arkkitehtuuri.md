@@ -21,3 +21,8 @@ Pelitilanteen tallentamisesta huolehtii _SaveGame_-luokka, joka sijaitsee reposi
 ![starting game state diagram](https://user-images.githubusercontent.com/81024277/116233987-afa00480-a764-11eb-8cd9-bfb6e08320ff.jpg)
 
 Peli aloitetaan komennolla poetry run invoke start, joka kutsuu index.py:n _main_ funktiota, joka alustaa kaikki GameLoop-luokan tarvitsemat luokkamuuttujat (logic,display.colors,startview,event_queue,menu,shop sekä save). Tämän jälkeen main funktio luo GameLoop olion ja kutsuu sen metodia _start()_. GameLoop kutsuu _start()_-metodin sisällä omaa metodiaan _event_handler()_. Event-handler -metodi tunnistaa ohjelman olevan alussa "begin" muuttujan boolean arvosta ja kutsuu StartView luokan metodia _view()_, mikä piirtää aloitusnäytön palauttamatta mitään. Kun käyttäjä painaa "Start a new game!" vaihtuu muuttujan "begin" arvo Falseksi ja aloitusnäkymä poistuu näkyvistä. Kun käyttäjä klikkaa näytön keskeltä kutsutaan GameLogic luokan metodia _click()_. Metodi tuottaa scorea ja kontrolli palaa looppiin.
+
+### Päivitytksen osto
+![buying an upgrade diagram](https://user-images.githubusercontent.com/81024277/118396746-96022680-b659-11eb-89e0-3baa542c9c18.png)
+
+Käyttäjä klikkaa ensin menu-kuvaketta, joka kutsuu _Menu_-luokan metodia _open_menu()_. Tämän jälkeen käyttäjä klikkaa shop-kuvaketta, joka kutsuu _Shop_-luokan _open_shop()_-metodia. Käyttäjä valitsee päivityksistä 2X-päivityksen. Kuvakkeen klikkaaminen muokkaa _GameLogic_-luokassa kriittisiä arvoja.
