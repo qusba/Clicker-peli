@@ -10,6 +10,8 @@ jotka nopeuttavat pisteiden keräämistä.
 
 [arkkitehtuuri](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Käyttöohje](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
 [Testausdokumentaatio](https://github.com/qusba/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 ## Asennus
