@@ -14,4 +14,4 @@ Tietojen tallennusta testaa _TestSaveGame_-luokka. Luokka käyttää _SaveGame_-
 Peliä pyörittävää silmukkaa on myös testattu, tämä on toteutettu _TestGameLoop_-luokalla. Käytännössä testit testaavat käyttöliittymän toimivuutta, eli ne olisi voinut jättää kokonaan pois testauksesta. Testiluokka luo _GameLoop_-luokkaolion, mikä käyttää kaikkia muita luokkia hyväkseen.
 
 ### Testikattavuus
-
+![Testikattavuus](file:///home/kasperka/Documents/testcoverage.png)
