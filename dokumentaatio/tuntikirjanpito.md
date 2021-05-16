@@ -10,3 +10,4 @@
 26.4 | 6 | Luotiin peliin menu-näkymä, sekä toimiva kauppa ja sen näkymä.
 30.4 | 2 | Aloitettiin docstringin implementointi ja luotiin tallennustoiminto.
 1.5 | 4 | Viimeisteltiin docstring ja luotiin lisää testejä, sekä edistettiin dokumentaatiota.
+16.5 | 3 | Viimesteltiin dokumentaatio.
