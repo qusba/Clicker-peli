@@ -1,11 +1,4 @@
 import unittest
-import pygame
-from game_loop import GameLoop
-from ui.colors import Colors
-from ui.start_view import StartView
-from ui.menu import Menu
-from ui.shop import Shop
-from event_queue import EventQueue
 from game_logic import GameLogic
 from repositories.save_game import SaveGame
 
